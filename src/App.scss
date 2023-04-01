@@ -1,0 +1,228 @@
+//Añadir o modificar cosas de SASS
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$new-colors: (  
+  "color-base":    rgba(22, 22, 22, 1),
+  "color-base2":    rgba(30,30,30,1),
+  "texto":    rgba(231, 231, 231,1)
+);
+$theme-colors: map-merge($theme-colors, $new-colors);
+
+$new-spacers: (
+    
+    6: ($spacer * 5)
+);
+$spacers: map-merge($spacers, $new-spacers);
+
+//Importar el SASS por completo
+@import "bootstrap/scss/bootstrap";
+
+$color-base: rgba(22, 22, 22, 1);
+$color-base2: rgba(30,30,30,1);
+$color-texto: rgb(231, 231, 231);
+
+html{
+  background-color: $color-base;
+}
+
+//Clases generales
+
+.texto-sombreado {
+  background: linear-gradient(to right, rgb(231, 231, 231), rgba(231, 231, 231, 0.2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1, h5, p{
+  color: $color-texto;
+}
+
+//Intro Nav
+
+@media (min-width: 300px){
+  .container-sm, .container {
+      max-width: 90%;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar-expand-md .navbar-nav .nav-link {
+      margin: 0 2vw;
+  }
+}
+
+
+
+@media (min-width: 768px){
+  .mx3 {
+      margin-left: 0;
+  }
+}
+
+.container{
+  margin-right: 40px;
+}
+
+.nav-link{
+  color: $color-texto;
+}
+
+.navbar-brand{
+  background: linear-gradient(to right, rgb(231, 231, 231), 80%,rgba(231, 231, 231, 0.2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+
+//Sobre Mi
+.sobre-mi{
+  background: linear-gradient(rgba(22, 22, 22, 1), 95%, rgba(30,30,30,1));
+  //background-color: $color-base;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: $color-texto;
+  height: auto;
+  padding-bottom: 50px;
+
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+  }
+  p {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+  }
+  h1{
+    margin: 0 auto;
+    width: 40vw;
+    margin-top: 50px;
+    font-size: calc(1.375rem + 1.25vw);
+  }
+  h5{
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px){
+  .sobre-mi{
+    h1{
+      width: 65vw;
+    }
+  }
+}
+
+
+//Habilidades
+.Habilidades{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  //background: linear-gradient(rgba(30,30,30,1), 5%, rgba(22, 22, 22, 1));
+  background-color: $color-base2;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  h1{
+    padding-bottom: 50px;
+  }
+}
+
+.img-container{
+  width:100%;
+  height:500px;
+  img{
+    width:200px;
+    height:200px;
+    object-fit: fill;
+    margin-top: 100px;
+  }
+}
+
+
+//Proyectos
+.proyectos {
+  background-color: $color-base;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  h2 {
+    text-align: center;
+    color: $color-texto;
+  }
+  button{
+    margin-top: 20px;
+  }
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: auto auto;
+  .div-grid{
+    text-align: center;
+    border: 1px solid black;
+    color: $color-texto;
+    padding-top: 2rem;
+    .div-proyectos{
+
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+//Contacto
+
+.contactos{
+  background-color: $color-base2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: $color-texto;
+
+  .flex-contactos{
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+      text-decoration: none;
+      color: $color-texto;
+      &:visited{
+        text-decoration: none;
+      }
+      &:hover{
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+}
+
+.contacto-texto{
+  text-decoration: none;
+}
+
+@media (max-width: 900px){
+  .contactos{
+    .flex-contactos{
+      width: 90%;
+      flex-wrap: wrap;
+      justify-content: center;
+      a{
+        padding: 10px 0;
+        width: 80%;
+      }
+    }
+
+  }
+}
