@@ -5,28 +5,28 @@ function Proyectos() {
   const variables = [
     {
       titulo: "Página web Responsive",
-      imagen: "Proyecto1",
+      imagen: "https://i.postimg.cc/LXFWB2rP/Proyecto1.png",
       descripcion: "Esta página fue mi 1ra practica de CSS Responsive Vanilla",
       linkGithub: "https://github.com/DeusExcalibur/1st-responsive",
       linkPagina: "https://deusexcalibur.github.io/1st-responsive/"
     },
     {
       titulo: "Dice Game",
-      imagen: "Proyecto2",
+      imagen: "https://i.postimg.cc/Jzgv0bxP/Proyecto2.png",
       descripcion: "1ra practica de DOM Manipulation con JS",
       linkGithub: "https://github.com/DeusExcalibur/DiceGame",
       linkPagina: "https://deusexcalibur.github.io/DiceGame/"
     },
     {
       titulo: "Simon Game",
-      imagen: "Proyecto3",
+      imagen: "https://i.postimg.cc/9f7S7rNV/Proyecto3.png",
       descripcion: "Juego de seguir una secuencia de colores",
       linkGithub: "https://github.com/DeusExcalibur/SimonGame",
       linkPagina: "https://deusexcalibur.github.io/SimonGame/"
     },
     {
       titulo: "Age Calculator",
-      imagen: "Proyecto4",
+      imagen: "https://i.postimg.cc/vZDCGPr4/Proyecto4.png",
       descripcion: "Página para calcular tu edad exacta",
       linkGithub: "https://github.com/DeusExcalibur/AgeCalculator",
       linkPagina: "https://deusexcalibur.github.io/AgeCalculator/"

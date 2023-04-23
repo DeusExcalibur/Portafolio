@@ -12,7 +12,7 @@ function ProyectosCard(props) {
                 <div className="the-front">
                   <div className="front-content">
                     <h5>{props.titulo1}</h5>
-                    <img src={`/src/images/${props.imagen1}.png`} alt="XD" />
+                    <img src={props.imagen1} alt="XD" />
                   </div>
                 </div>
                 <div className="the-back">
@@ -37,7 +37,7 @@ function ProyectosCard(props) {
                 <div className="the-front">
                   <div className="front-content">
                     <h5>{props.titulo2}</h5>
-                    <img src={`/src/images/${props.imagen2}.png`} alt="XD" />
+                    <img src={props.imagen2} alt="XD" />
                   </div>
                 </div>
                 <div className="the-back">
