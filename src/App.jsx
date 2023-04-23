@@ -7,7 +7,6 @@ import Contacto from './components/Contacto'
 
 
 function App() {
-
   return (
     <div className="App">
       <a name="Inicio"></a>

@@ -36,12 +36,17 @@ html{
 }
 
 h1, h5, p{
-  color: $color-base;
+  color: $color-texto
 }
 
 .img-gris{
   filter: grayscale(100%);
 }
+
+.fondo-oscuro{
+  background: linear-gradient(to right, rgb(231, 231, 231), 80%,rgba(231, 231, 231, 0.2));
+}
+
 
 //Intro Nav
 
@@ -216,6 +221,9 @@ h1, h5, p{
   &:hover > .the-card{
     transform: rotateY(180deg);
   }
+  &:active > .the-card{
+    transform: rotateY(180deg);
+  }
 }
 
 .the-card{
@@ -240,9 +248,10 @@ h1, h5, p{
   .front-content{
     margin-top: 1rem;
     img{
-      width: 70%;
+      width: 80%;
       height: 250px;
-      border-radius: 10%;
+      border-radius: 2%;
+      border: solid 2px red;
     }
     h5{
       color: $color-texto;
@@ -272,6 +281,9 @@ h1, h5, p{
   }
 }
 
+.ocultar-carta{
+  display: none;
+}
 
 //Contacto
 

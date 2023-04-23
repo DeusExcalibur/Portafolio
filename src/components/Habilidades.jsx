@@ -43,7 +43,7 @@ function Habilidades() {
               <div>
                 <button className="read-more-btn" onClick={mostrarTexto}>Mostrar Mas</button>
                 <div className="card-read-more">
-                  Tengo un manejo muy bueno de HTML
+                  Todos los conocimientos necesarios de HTML5
                 </div>
               </div>
             </Carousel.Caption>
