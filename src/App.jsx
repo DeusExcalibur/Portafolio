@@ -5,7 +5,6 @@ import Habilidades from './components/Habilidades'
 import Proyectos from './components/Proyectos'
 import Contacto from './components/Contacto'
 
-
 function App() {
   return (
     <div className="App">

@@ -4,11 +4,11 @@ import ProyectoCard from "./ProyectosCard"
 function Proyectos() {
   const variables = [
     {
-      titulo: "Página web Responsive",
-      imagen: "https://i.postimg.cc/LXFWB2rP/Proyecto1.png",
-      descripcion: "Esta página fue mi 1ra practica de CSS Responsive Vanilla",
-      linkGithub: "https://github.com/DeusExcalibur/1st-responsive",
-      linkPagina: "https://deusexcalibur.github.io/1st-responsive/"
+      titulo: "Advice Generator",
+      imagen: "https://i.postimg.cc/9M8RwsKP/Proyecto1.png",
+      descripcion: "Mi primer proyecto con Tailwind y uso sin ninguna guia de APIs",
+      linkGithub: "https://github.com/DeusExcalibur/AdviceGenerator",
+      linkPagina: "https://deusexcalibur.github.io/AdviceGenerator/"
     },
     {
       titulo: "Dice Game",
@@ -32,11 +32,11 @@ function Proyectos() {
       linkPagina: "https://deusexcalibur.github.io/AgeCalculator/"
     },
     {
-      titulo: "Página 5",
-      imagen: "Proyecto5",
-      descripcion: "En progreso",
-      linkGithub: "https://github.com/DeusExcalibur/",
-      linkPagina: "#"
+      titulo: "Página web Responsive",
+      imagen: "https://i.postimg.cc/LXFWB2rP/Proyecto5.png",
+      descripcion: "Esta página fue mi 1ra practica de CSS Responsive Vanilla",
+      linkGithub: "https://github.com/DeusExcalibur/1st-responsive",
+      linkPagina: "https://deusexcalibur.github.io/1st-responsive/"
     },
     {
       titulo: "Página 6",
@@ -47,15 +47,15 @@ function Proyectos() {
     }
   ] 
 
-  const ocultar = ()=>{
-    if(document.querySelector(".boton-carta").innerHTML == "Mostrar Mas"){
-      document.querySelector(".carta").classList.toggle("ocultar-carta")
-      document.querySelector(".boton-carta").innerHTML = "Mostrar Menos";
-    }else{
-      document.querySelector(".carta").classList.toggle("ocultar-carta")
-      document.querySelector(".boton-carta").innerHTML = "Mostrar Mas";
-    }
-  }
+  // const ocultar = ()=>{
+  //   if(document.querySelector(".boton-carta").innerHTML == "Mostrar Mas"){
+  //     document.querySelector(".carta").classList.toggle("ocultar-carta")
+  //     document.querySelector(".boton-carta").innerHTML = "Mostrar Menos";
+  //   }else{
+  //     document.querySelector(".carta").classList.toggle("ocultar-carta")
+  //     document.querySelector(".boton-carta").innerHTML = "Mostrar Mas";
+  //   }
+  // }
 
   return (
     <div>
@@ -78,7 +78,8 @@ function Proyectos() {
           linkPagina1={variables[2].linkPagina} linkPagina2={variables[3].linkPagina}
           />
 
-          <div className="carta ocultar-carta">
+
+          {/* <div className="carta ocultar-carta">
             <ProyectoCard
             titulo1={variables[4].titulo} titulo2={variables[5].titulo} 
             imagen1={variables[4].imagen} imagen2={variables[5].imagen} 
@@ -87,8 +88,8 @@ function Proyectos() {
             linkPagina1={variables[4].linkPagina} linkPagina2={variables[5].linkPagina}
             />
           </div>
-          <button onClick={ocultar} className="boton-carta">Mostrar Mas</button>
-      
+
+          <button onClick={ocultar} className="boton-carta">Mostrar Mas</button> */}
         </div>
     </div>
   );

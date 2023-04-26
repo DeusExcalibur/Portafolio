@@ -1,5 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Contacto() {
 
@@ -11,15 +13,15 @@ function Contacto() {
           <div className='flex-contactos'>
             <div className='flex-icon'>
               <a href="https://github.com/DeusExcalibur" target="blank">GitHub</a>
-              <FontAwesomeIcon icon="fa-brands fa-square-github " className='icon'/>
+              <FontAwesomeIcon icon={faGithubSquare} className='icon'/>
             </div>
             <div className='flex-icon'>
               <a href="https://www.linkedin.com/in/david-segura-vesga/" target="blank">LinkedIn</a>
-              <FontAwesomeIcon icon="fa-brands fa-linkedin" className='icon'/>
+              <FontAwesomeIcon icon={faLinkedin} className='icon'/>
             </div>
             <div className='flex-icon'>
               <a href="mailto:dseguravesga@gmail.com" target="blank">Correo</a>
-              <FontAwesomeIcon icon="fa-solid fa-envelope" className='icon'/>
+              <FontAwesomeIcon icon={faEnvelope} className='icon'/>
             </div>
           </div>
         </footer>

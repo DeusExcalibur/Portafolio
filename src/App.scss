@@ -251,7 +251,7 @@ h1, h5, p{
       width: 80%;
       height: 250px;
       border-radius: 2%;
-      border: solid 2px red;
+      border: solid 4px rgb(226, 233, 233);
     }
     h5{
       color: $color-texto;
@@ -273,7 +273,8 @@ h1, h5, p{
     }
     a{
       text-decoration: none;
-      color: $color-texto;
+      color: rgb(44, 44, 44);
+      text-shadow: 1px 1px 1px #b9b9b9;
     }
     p{
       color: $color-texto;
