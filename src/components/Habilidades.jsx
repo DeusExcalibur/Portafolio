@@ -32,14 +32,14 @@ function Habilidades() {
   return (
     <div className="Habilidades">
       <div className="Habilidades-contenedor">
-        <h1 className="texto-sombreado">Habilidades</h1>
-        <Carousel>
+        <h1 className="texto-sombreado-oscuro">Habilidades</h1>
+        <Carousel variant="dark">
           <Carousel.Item interval={5000}>
             <div className="img-container">
               <img className="img-fluid img-gris" src={htmllogo} alt="XD"/>
             </div>
             <Carousel.Caption>
-              <h3>HTML</h3>
+              <h3 className="textooscuro">HTML</h3>
               <div>
                 <button className="read-more-btn" onClick={mostrarTexto}>Mostrar Mas</button>
                 <div className="card-read-more">
@@ -57,7 +57,7 @@ function Habilidades() {
               <div>
                 <button className="read-more-btn" onClick={mostrarTexto}>Mostrar Mas</button>
                 <div className="card-read-more">
-                  CSS, CSS-SASS, BOOTSTRAP, REACT-BOOTSTRAP
+                  CSS, CSS-SASS, BOOTSTRAP, REACT-BOOTSTRAP, TAILWIND-CSS
                 </div>
               </div>
             </Carousel.Caption>
@@ -71,7 +71,7 @@ function Habilidades() {
               <div>
                 <button className="read-more-btn" onClick={mostrarTexto}>Mostrar Mas</button>
                 <div className="card-read-more">
-                  JQUERY, JSON, APIS, DOM MANIPULATION
+                  JQUERY, JSON, APIS, DOM MANIPULATION, JSX
                 </div>
               </div>
             </Carousel.Caption>

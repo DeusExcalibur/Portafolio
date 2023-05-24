@@ -60,7 +60,7 @@ function Proyectos() {
   return (
     <div>
       <div className="contenedor">
-        <h1 className="texto-sombreado">Proyectos</h1>
+        <h1 className="texto-sombreado-oscuro">Proyectos</h1>
 
           <ProyectoCard 
           titulo1={variables[0].titulo} titulo2={variables[1].titulo} 

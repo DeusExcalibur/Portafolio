@@ -4,8 +4,11 @@
 
 $new-colors: (  
   "color-base":    rgba(22, 22, 22, 1),
+  "color-basev2":      rgb(34, 40, 49),
   "color-base2":    rgba(30,30,30,1),
-  "texto":    rgba(231, 231, 231,1)
+  "texto":    rgba(231, 231, 231,1),
+  "textonegro":    rgba(231, 231, 231,1),
+  "textooscuro":    rgba(26, 32, 64,1)
 );
 $theme-colors: map-merge($theme-colors, $new-colors);
 
@@ -21,6 +24,11 @@ $spacers: map-merge($spacers, $new-spacers);
 $color-base: rgba(22, 22, 22, 1);
 $color-base2: rgba(30,30,30,1);
 $color-texto: rgb(231, 231, 231);
+$color-texto-negro: rgb(26, 32, 64);
+
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 html{
   background-color: $color-base;
@@ -35,13 +43,20 @@ html{
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombreado-oscuro {
+  background: linear-gradient(to right, rgb(26, 32, 64), 80%, rgba(231, 231, 231, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1, h5, p{
   color: $color-texto
 }
 
-.img-gris{
+/*.img-gris{
   filter: grayscale(100%);
-}
+}*/
 
 .fondo-oscuro{
   background: linear-gradient(to right, rgb(231, 231, 231), 80%,rgba(231, 231, 231, 0.2));
@@ -84,15 +99,14 @@ h1, h5, p{
   font-size: 1.5rem;
 }
 
-
 //Sobre Mi
 .sobre-mi{
-  background: linear-gradient(rgba(22, 22, 22, 1), 95%, rgba(30,30,30,1));
+  background: linear-gradient(rgba(221, 221, 221, 1), 95%, rgba(221,209,203,1));
   //background-color: $color-base;
   padding-top: 150px;
   padding-bottom: 10px;
   text-align: center;
-  color: $color-texto;
+  color: $color-texto-negro;
   height: auto;
   padding-bottom: 50px;
 
@@ -106,12 +120,15 @@ h1, h5, p{
     margin: 0 auto;
     margin-top: 20px;
     width: 80%;
+    color: $color-texto-negro;
+    font-size: 1.4rem;
   }
   h1{
     margin: 0 auto;
     width: 40vw;
     margin-top: 50px;
-    font-size: calc(1.375rem + 1.25vw);
+    font-size: calc(1.375rem + 1.75vw);
+    color: $color-texto-negro;
   }
   h5{
     margin: 0 auto;
@@ -127,12 +144,11 @@ h1, h5, p{
   }
 }
 
-
 //Habilidades
 .Habilidades{
   padding-top: 100px;
   padding-bottom: 100px;
-  background: linear-gradient(rgba(30,30,30,1), 95%, rgba(22, 22, 22, 1));
+  background: linear-gradient(rgba(221,209,193,1), 95%, rgba(178, 167, 146, 1));
   //background-color: $color-base2;
   text-align: center;
   height: auto;
@@ -140,11 +156,15 @@ h1, h5, p{
   h1{
     padding-bottom: 10px;
   }
+  h3{
+    color: $color-texto-negro;
+  }
 }
 
 .Habilidades-contenedor{
   margin: 0 auto;
   width: 70%;
+  color: $color-texto-negro;
 }
 
 .img-container{
@@ -162,7 +182,6 @@ h1, h5, p{
   bottom: 2.5rem;
 }
 
-
 .card-read-more{
   padding-top: 10px;
   display: block;
@@ -177,6 +196,7 @@ h1, h5, p{
   opacity: 1;
   height: auto;
   transition: all 1s;
+  color: $color-texto-negro;
 }
 
 .read-more-btn{
@@ -186,8 +206,10 @@ h1, h5, p{
   position: relative;
   z-index: 1;
   transition: all 0.5s;
+  color: $color-texto-negro;
+  background-color: transparent;
+  border-radius: 10%;
 }
-
 
 @media (max-width: 900px){
   .Habilidades-contenedor{
@@ -198,7 +220,7 @@ h1, h5, p{
 //Proyectos
 
 .contenedor{
-  background: linear-gradient(rgba(22, 22, 22, 1), 95%, rgba(30,30,30,1));
+  background: linear-gradient(rgba(178, 167, 146, 1), 95%, rgba(221,209,193));
   text-align: center;
   padding: 100px 0px;
   height: auto;
@@ -251,10 +273,9 @@ h1, h5, p{
       width: 80%;
       height: 250px;
       border-radius: 2%;
-      border: solid 4px rgb(226, 233, 233);
     }
     h5{
-      color: $color-texto;
+      color: $color-texto-negro;
     }
   }
 }
@@ -264,12 +285,15 @@ h1, h5, p{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  //background: gray;
   transform: rotateY(180deg);
   .back-content{
     margin-top: 4rem;
+    height: 250px;
+    background: rgba(221,209,193,1);
+    border-radius: 10%;
     button{
       margin-bottom: 10px;
+      background-color: transparent;
     }
     a{
       text-decoration: none;
@@ -277,7 +301,8 @@ h1, h5, p{
       text-shadow: 1px 1px 1px #b9b9b9;
     }
     p{
-      color: $color-texto;
+      color: $color-texto-negro;
+      padding-top: 10%;
     }
   }
 }
@@ -289,11 +314,11 @@ h1, h5, p{
 //Contacto
 
 .contactos{
-  background-color: $color-base2;
+  background-color: rgb(221,209,193);
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  color: $color-texto;
+  color: $color-texto-negro;
 
   .flex-contactos{
     padding-top: 50px;
@@ -305,14 +330,14 @@ h1, h5, p{
 
     a{
       text-decoration: none;
-      color: $color-texto;
+      color: $color-texto-negro;
       padding: 0 10px;
       font-size: 1.5rem;
       &:visited{
         text-decoration: none;
       }
       &:hover{
-        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
       }
     }
     .icon{
